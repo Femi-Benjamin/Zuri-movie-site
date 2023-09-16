@@ -1,5 +1,4 @@
- eslint-disable no-undef 
- eslint-disable react/prop-types 
+
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -35,20 +34,22 @@ const MovieCard = ({ movie }) => {
 }
 
 // Define PropTypes for the MovieCard component
-MovieCard.propTypes = {
-    movie: PropTypes.shape({
-        poster_path: PropTypes.string,
-        release_date: PropTypes.string,
-        title: PropTypes.string,
-        vote_average: PropTypes.number,
-        popularity: PropTypes.number,
-        genres: PropTypes.arrayOf(
-            PropTypes.shape({
-                name: PropTypes.string,
-            })
-        ),
-    }).isRequired,
-};
+// MovieCard.propTypes = {
+//     // eslint-disable-next-line no-undef
+//     movie: PropTypes.shape({
+//         poster_path: PropTypes.string,
+//         release_date: PropTypes.string,
+//         // eslint-disable-next-line no-undef
+//         title: PropTypes.string,
+//         vote_average: PropTypes.number,
+//         popularity: PropTypes.number,
+//         genres: PropTypes.arrayOf(
+//             PropTypes.shape({
+//                 name: PropTypes.string,
+//             })
+//         ),
+//     }).isRequired,
+// };
 
 // export default MovieCard;
 
