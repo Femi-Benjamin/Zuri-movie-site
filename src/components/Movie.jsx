@@ -1,5 +1,5 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/prop-types */
+ eslint-disable no-undef 
+ eslint-disable react/prop-types 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
